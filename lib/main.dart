@@ -37,48 +37,47 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Container(
-              color: Colors.white,
-              padding: EdgeInsets.all(10.0),
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.phone,
-                    color: Colors.teal[900],
-                  ),
-                  SizedBox(width: 10.0),
-                  Text(
-                    '+242 06 600 00 00',
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      color: Colors.teal[900],
-                      fontFamily: 'Source Sans Pro',
-                    ),
-                  ),
-                ],
+            SizedBox(
+              height: 20.0,
+              width: 150.0,
+              child: Divider(
+                color: Colors.teal[100],
               ),
             ),
-            Container(
+            Card(
               color: Colors.white,
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              padding: EdgeInsets.all(10.0),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.email,
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  '+242 06 475 43 73',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.teal[900],
+                    fontFamily: 'Source Sans Pro',
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  'essierejohanne1@gmail.com',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontFamily: 'Source Sans Code',
                     color: Colors.teal[900],
                   ),
-                  SizedBox(width: 10.0),
-                  Text(
-                    'essierejohanne1@gmail.com',
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      fontFamily: 'Source Sans Code',
-                      color: Colors.teal[900],
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
           ],
